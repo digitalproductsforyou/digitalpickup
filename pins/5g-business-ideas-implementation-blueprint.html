@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5G Business Ideas & Implementation Blueprint</title>
+  <meta name="description" content="Turn 5G technology into profitable ventures with ready-to-execute ideas">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f8f9fa;
+      color: #2d3436;
+      line-height: 1.6;
+    }
+    .hero {
+      background: #6C5CE7;
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 16px;
+      font-size: 13px;
+      margin-bottom: 18px;
+      letter-spacing: 0.5px;
+    }
+    .hero h1 {
+      font-size: clamp(26px, 5vw, 42px);
+      font-weight: 700;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+    .hero p {
+      font-size: clamp(16px, 2.5vw, 20px);
+      opacity: 0.92;
+      max-width: 540px;
+      margin: 0 auto 28px;
+    }
+    .price-pill {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 30px;
+      padding: 8px 28px;
+      font-size: 22px;
+      font-weight: 700;
+    }
+    .card {
+      max-width: 600px;
+      margin: -24px auto 0;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 32px 28px;
+    }
+    .features-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #2d3436;
+    }
+    .feature-list {
+      list-style: none;
+      margin-bottom: 28px;
+    }
+    .feature-item {
+      padding: 10px 0;
+      border-bottom: 1px solid #f0f0f0;
+      font-size: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+    }
+    .feature-item:last-child { border-bottom: none; }
+    .check {
+      color: #6C5CE7;
+      font-weight: 700;
+      font-size: 17px;
+      flex-shrink: 0;
+    }
+    .delivery {
+      background: #EDE9FF;
+      border-radius: 10px;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+    .buy-btn {
+      width: 100%;
+      background: #6C5CE7;
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 18px;
+      font-size: 18px;
+      font-weight: 700;
+      cursor: pointer;
+      letter-spacing: 0.3px;
+      transition: opacity 0.2s;
+    }
+    .buy-btn:hover { opacity: 0.88; }
+    .secure {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 12px;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 16px;
+      font-size: 12px;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="badge">Digital Ebook</div>
+  <h1>5G Business Ideas & Implementation Blueprint</h1>
+  <p>Turn 5G technology into profitable ventures with ready-to-execute ideas</p>
+  <div class="price-pill">&#8377; 299</div>
+</div>
+
+<div class="card">
+  <p class="features-title">What you get:</p>
+  <ul class="feature-list">
+    <li class="feature-item"><span class="check">&#10003;</span> 25+ viable 5G business ideas spanning IoT, healthcare, entertainment, and smart cities</li>
+<li class="feature-item"><span class="check">&#10003;</span> Step-by-step implementation roadmap for each idea with startup costs and revenue potential</li>
+<li class="feature-item"><span class="check">&#10003;</span> Market research summaries showing current demand and growth projections for 5G sectors</li>
+<li class="feature-item"><span class="check">&#10003;</span> Competitor analysis templates and go-to-market strategies for launching your 5G venture</li>
+  </ul>
+  <div class="delivery">&#9889; Instant PDF download after payment. Access immediately and start exploring 5G opportunities.</div>
+  <button class="buy-btn" onclick="openCheckout()">
+    Buy Now — &#8377; 299
+  </button>
+  <p class="secure">&#128274; Secured by Razorpay &nbsp;|&nbsp; UPI, Cards, Netbanking accepted</p>
+</div>
+
+<footer>
+  &copy; 2025 &nbsp;|&nbsp; All rights reserved
+</footer>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+  function openCheckout() {
+    var options = {
+      key: 'rzp_test_cigZ6fYUDoO40D',
+      amount: 29900,
+      currency: 'INR',
+      name: '5G Business Ideas & Implementation Blueprint',
+      description: 'Turn 5G technology into profitable ventures with ready-to-execute ideas',
+      theme: { color: '#6C5CE7' },
+      handler: function(response) {
+        document.body.innerHTML =
+          '<div style="min-height:100vh;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;font-family:sans-serif;text-align:center;padding:24px">'
+          + '<div style="font-size:56px">&#127881;</div>'
+          + '<h2 style="color:#6C5CE7">Payment successful!</h2>'
+          + '<p style="color:#555;max-width:320px">Thank you for your purchase. Your download link has been sent to your email.</p>'
+          + '</div>';
+      },
+      prefill: { name: '', email: '', contact: '' },
+      modal: { ondismiss: function() {} }
+    };
+    var rzp = new Razorpay(options);
+    rzp.open();
+  }
+</script>
+</body>
+</html>
