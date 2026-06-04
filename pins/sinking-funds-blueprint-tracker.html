@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Complete Sinking Funds Blueprint - Excel & Google Sheets</title>
+  <meta name="description" content="Stop living paycheck to paycheck with automated sinking funds that actually work">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'DM Sans',sans-serif;background:#EEF4FF;color:#2d3436;line-height:1.65}
+    .hero{background:#1B6CA8;color:#fff;padding:56px 24px 72px;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-60px;right:-60px;width:220px;height:220px;background:rgba(255,255,255,.07);border-radius:50%}
+    .em{font-size:48px;margin-bottom:16px;display:block}
+    .badge{display:inline-block;background:rgba(255,255,255,.22);border-radius:20px;padding:5px 18px;font-size:12px;font-weight:600;margin-bottom:20px;letter-spacing:1px;text-transform:uppercase}
+    .hero h1{font-size:clamp(24px,5vw,40px);font-weight:700;margin-bottom:14px;line-height:1.2;position:relative;z-index:1}
+    .hero p{font-size:clamp(15px,2.5vw,18px);opacity:.93;max-width:520px;margin:0 auto 28px;position:relative;z-index:1}
+    .pp{display:inline-block;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.55);border-radius:30px;padding:10px 32px;font-size:24px;font-weight:700;position:relative;z-index:1}
+    .tb{background:#EEF4FF;text-align:center;padding:12px 24px;font-size:13px;font-weight:600;color:#1B6CA8;border-bottom:1px solid rgba(0,0,0,.05)}
+    .card{max-width:580px;margin:-28px auto 40px;background:#fff;border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,.10);padding:36px 32px;position:relative;z-index:2}
+    .nc{background:#EEF4FF;border-radius:12px;padding:16px 20px;margin-bottom:28px;border-left:4px solid #1B6CA8}
+    .nc p{font-size:14px;color:#555;line-height:1.6}
+    .nl{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:#1B6CA8;margin-bottom:6px}
+    .ft{font-size:17px;font-weight:700;margin-bottom:16px;color:#1a1a1a}
+    .fl{list-style:none;margin-bottom:28px}
+    .fi{padding:11px 0;border-bottom:1px solid #f2f2f2;font-size:15px;display:flex;align-items:flex-start;gap:12px;color:#3a3a3a}
+    .fi:last-child{border-bottom:none}
+    .ck{color:#1B6CA8;font-weight:700;font-size:16px;flex-shrink:0;margin-top:1px}
+    .dv{background:#EEF4FF;border-radius:10px;padding:13px 18px;font-size:14px;color:#555;margin-bottom:22px;text-align:center;font-weight:500}
+    .bb{width:100%;background:#1B6CA8;color:#fff;border:none;border-radius:14px;padding:19px;font-size:18px;font-weight:700;cursor:pointer;font-family:'DM Sans',sans-serif;letter-spacing:.3px;transition:transform .15s,opacity .15s}
+    .bb:hover{opacity:.9;transform:translateY(-1px)}
+    .sc{text-align:center;font-size:12px;color:#bbb;margin-top:12px}
+    footer{text-align:center;padding:28px 16px 40px;font-size:12px;color:#bbb}
+  </style>
+</head>
+<body>
+<div class="hero">
+  <span class="em">📊</span>
+  <div class="badge">personal finance</div>
+  <h1>The Complete Sinking Funds Blueprint - Excel & Google Sheets</h1>
+  <p>Stop living paycheck to paycheck with automated sinking funds that actually work</p>
+  <div class="pp">&#8377; 399</div>
+</div>
+<div class="tb">⭐ Built by finance enthusiasts for real people</div>
+<div class="card">
+  <div class="nc">
+    <div class="nl">📊 Perfect for personal finance enthusiasts</div>
+    <p>This template was made specifically for people interested in personal finance. Everything inside is practical, actionable, and ready to use immediately.</p>
+  </div>
+  <p class="ft">🎁 What's included:</p>
+  <ul class="fl"><li class="fi"><span class="ck">✓</span> Pre-built categories for 15+ life expenses (car repairs, holidays, medical, gifts) with auto-calculating formulas</li>
+<li class="fi"><span class="ck">✓</span> Monthly breakdown sheet that shows exactly how much to set aside each week to hit your savings goals</li>
+<li class="fi"><span class="ck">✓</span> Visual progress tracker with color-coded bars so you see your funds growing in real-time</li>
+<li class="fi"><span class="ck">✓</span> Emergency fund alert system that flags when you're underfunded and suggests catch-up amounts</li></ul>
+  <div class="dv">⚡ Instant download as Excel & Google Sheets files. Works on desktop, tablet, and mobile.</div>
+  <div id="buy-area">
+    <button class="bb" onclick="openCheckout()">Get Instant Access — &#8377; 399</button>
+    <p class="sc">🔒 Secure checkout via Razorpay &nbsp;·&nbsp; UPI · Cards · Netbanking</p>
+  </div>
+  <div id="success-msg" style="display:none;text-align:center;padding:28px 16px;">
+    <div style="font-size:56px;margin-bottom:12px;">🎉</div>
+    <h2 style="color:#1B6CA8;font-size:22px;margin-bottom:8px;">Payment Successful!</h2>
+    <p style="color:#555;font-size:15px;line-height:1.6;max-width:320px;margin:0 auto;">
+      Your PDF is downloading automatically. Check your Downloads folder!
+    </p>
+    <p style="color:#aaa;font-size:12px;margin-top:16px;">
+      Not downloading? <a href="https://digitalproductsforyou.github.io/digitalpickup//pins/sinking-funds-blueprint-tracker.pdf" download style="color:#1B6CA8">Click here</a>
+    </p>
+  </div>
+</div>
+<footer>&copy; 2026 &nbsp;·&nbsp; Digital download — no physical product shipped</footer>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+function openCheckout(){
+  var o={
+    key:'rzp_live_J08kk6zMbXK8Mw',
+    amount:39900,
+    currency:'INR',
+    name:'The Complete Sinking Funds Blueprint - Excel & Google Sheets',
+    description:'Stop living paycheck to paycheck with automated sinking funds that actually work',
+    theme:{color:'#1B6CA8'},
+    handler:function(r){
+        document.getElementById('buy-area').style.display = 'none';
+        document.getElementById('success-msg').style.display = 'block';
+        document.getElementById('success-msg').scrollIntoView({behavior:'smooth'});
+        // Auto-trigger PDF download immediately
+        var a = document.createElement('a');
+        a.href = 'https://digitalproductsforyou.github.io/digitalpickup//pins/sinking-funds-blueprint-tracker.pdf';
+        a.download = 'https://digitalproductsforyou.github.io/digitalpickup//pins/sinking-funds-blueprint-tracker.pdf'.split('/').pop();
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);},
+    prefill:{name:'',email:'',contact:''},
+    modal:{ondismiss:function(){}}
+  };
+  new Razorpay(o).open();
+}
+</script>
+</body>
+</html>
