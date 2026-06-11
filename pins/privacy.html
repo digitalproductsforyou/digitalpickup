@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Digital Products Wala</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink:     #0F0F0F;
+      --bg:      #F7F5F0;
+      --accent:  #FF4D00;
+      --muted:   #6B6860;
+      --border:  #E0DDD6;
+      --white:   #FFFFFF;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--white);
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .brand-dot {
+      width: 10px;
+      height: 10px;
+      background: var(--accent);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 18px;
+      color: var(--ink);
+      letter-spacing: -0.3px;
+    }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 72px 0 56px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(36px, 6vw, 56px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -1.5px;
+      color: var(--ink);
+      margin-bottom: 20px;
+    }
+
+    .hero-meta {
+      font-size: 14px;
+      color: var(--muted);
+      font-weight: 300;
+    }
+
+    .hero-meta span {
+      display: inline-block;
+      width: 4px;
+      height: 4px;
+      background: var(--muted);
+      border-radius: 50%;
+      margin: 0 10px;
+      vertical-align: middle;
+    }
+
+    /* ── Content ── */
+    .content {
+      padding: 64px 0 96px;
+    }
+
+    section {
+      margin-bottom: 52px;
+      padding-bottom: 52px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    section:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--ink);
+      margin-bottom: 20px;
+      letter-spacing: -0.3px;
+    }
+
+    p {
+      color: #3A3836;
+      font-weight: 300;
+      margin-bottom: 16px;
+      font-size: 15.5px;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      margin: 16px 0;
+    }
+
+    ul li {
+      padding: 8px 0 8px 20px;
+      position: relative;
+      color: #3A3836;
+      font-weight: 300;
+      font-size: 15.5px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    ul li:last-child { border-bottom: none; }
+
+    ul li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .callout {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      padding: 20px 24px;
+      margin: 24px 0;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .callout p {
+      margin: 0;
+      font-size: 15px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.15s;
+    }
+
+    a:hover { border-bottom-color: var(--accent); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--ink);
+      padding: 32px 0;
+    }
+
+    footer .wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer p {
+      color: rgba(255,255,255,0.4);
+      font-size: 13px;
+      font-weight: 300;
+      margin: 0;
+    }
+
+    footer a {
+      color: rgba(255,255,255,0.6);
+      border-bottom-color: transparent;
+    }
+
+    @media (max-width: 600px) {
+      footer .wrap { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <a href="#" class="brand">
+      <div class="brand-dot"></div>
+      <span class="brand-name">Digital Products Wala</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <div class="hero">
+      <p class="eyebrow">Legal</p>
+      <h1>Privacy Policy</h1>
+      <p class="hero-meta">
+        Effective June 11, 2025
+        <span></span>
+        Last updated June 11, 2025
+      </p>
+    </div>
+
+    <div class="content">
+
+      <section>
+        <h2>Who we are</h2>
+        <p>Digital Products Wala is a digital product store that sells downloadable products including guides, planners, templates and ebooks. We operate through our website and social media channels including Facebook and Instagram.</p>
+        <div class="callout">
+          <p>We do not sell, rent, or share your personal information with any third party for marketing purposes. Ever.</p>
+        </div>
+      </section>
+
+      <section>
+        <h2>Information we collect</h2>
+        <p>We collect only what is necessary to process your purchase and deliver your product:</p>
+        <ul>
+          <li>Name and email address — for order confirmation and product delivery</li>
+          <li>Payment information — processed securely by Razorpay, we never store card or UPI details</li>
+          <li>Device and browser type — for technical support only</li>
+          <li>IP address — for fraud prevention only</li>
+        </ul>
+        <p>We do not require account creation. We do not collect information beyond what is needed to fulfill your order.</p>
+      </section>
+
+      <section>
+        <h2>Facebook and Instagram integration</h2>
+        <p>We use the Facebook and Instagram APIs to publish content to our own social media pages. Specifically:</p>
+        <ul>
+          <li>We post product images, descriptions and links to our Facebook Page and Instagram account</li>
+          <li>We do not collect, store or process any data from Facebook or Instagram users</li>
+          <li>We do not access your Facebook or Instagram profile, friends list, messages or any personal data</li>
+          <li>Visiting our page on Facebook or Instagram is governed by Meta's own Privacy Policy</li>
+          <li>We use <strong>pages_manage_posts</strong> permission solely to publish posts to our own page — no user data is accessed</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>How we use your information</h2>
+        <p>Information collected is used exclusively to:</p>
+        <ul>
+          <li>Process and confirm your payment via Razorpay</li>
+          <li>Deliver your purchased digital product</li>
+          <li>Send your order receipt and download link by email</li>
+          <li>Respond to customer support requests</li>
+          <li>Comply with legal obligations</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Payment security</h2>
+        <p>All payments are processed by Razorpay, a PCI-DSS compliant payment gateway regulated in India. We never see or store your full card number, CVV, UPI PIN or banking credentials. Razorpay's privacy policy governs the handling of your payment data.</p>
+      </section>
+
+      <section>
+        <h2>Digital product delivery</h2>
+        <p>Upon successful payment, your digital product is delivered via a direct download link shown immediately on the page. We retain your email address only long enough to ensure delivery and handle any support queries.</p>
+      </section>
+
+      <section>
+        <h2>Data retention</h2>
+        <p>We retain purchase records (name, email, product purchased) for up to 12 months for customer support and legal compliance. You may request deletion of your data at any time by contacting us.</p>
+      </section>
+
+      <section>
+        <h2>Your rights</h2>
+        <p>You have the right to:</p>
+        <ul>
+          <li>Access the personal data we hold about you</li>
+          <li>Request correction of inaccurate data</li>
+          <li>Request deletion of your data</li>
+          <li>Withdraw consent at any time</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Children's privacy</h2>
+        <p>Our services are not directed at children under 13. We do not knowingly collect personal information from children.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>We may update this Privacy Policy from time to time. The date at the top reflects the most recent revision. Continued use of our services after any changes constitutes acceptance of the updated policy.</p>
+      </section>
+
+      <section>
+        <h2>Contact us</h2>
+        <p>Questions about this Privacy Policy or how your data is handled:</p>
+        <div class="callout">
+          <p>✉️ <a href="mailto:digitalproducts0191@gmail.com">digitalproducts0191@gmail.com</a></p>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>&copy; 2025 Digital Products Wala. All rights reserved.</p>
+    <p>Made in India 🇮🇳</p>
+  </div>
+</footer>
+
+</body>
+</html>
