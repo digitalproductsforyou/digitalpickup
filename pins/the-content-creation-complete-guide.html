@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Content Creation Complete Guide</title>
+  <meta name="description" content="Work Smarter. Earn More. Scale Faster.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:'Poppins',sans-serif;background:#fff;color:#1a1a1a;line-height:1.6}
+
+    /* ── Hero ── */
+    .hero{background:#BE185D;color:#fff;padding:0}
+    .hero-top{padding:48px 24px 0;text-align:center;max-width:900px;margin:0 auto}
+    .hero-badge{display:inline-block;background:rgba(255,255,255,0.2);border-radius:20px;padding:5px 18px;font-size:12px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px}
+    .hero h1{font-size:clamp(24px,5vw,40px);font-weight:800;line-height:1.15;margin-bottom:14px}
+    .hero-sub{font-size:17px;opacity:0.9;margin-bottom:32px;line-height:1.6}
+    .price-area{background:rgba(0,0,0,0.2);padding:20px 24px;text-align:center}
+    .price-row{display:flex;align-items:center;justify-content:center;gap:16px;flex-wrap:wrap}
+    .price-now{font-size:42px;font-weight:800}
+    .price-old{font-size:20px;opacity:0.6;text-decoration:line-through}
+    .save-badge{background:#22c55e;color:#fff;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:700}
+    .price-note{font-size:14px;opacity:0.8;margin-top:8px}
+
+    /* ── Main wrapper ── */
+    .wrap{max-width:1100px;margin:0 auto;padding:0 40px;width:100%}
+
+    /* ── What you'll achieve ── */
+    .achieve{padding:48px 0 32px}
+    .section-label{font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:#BE185D;margin-bottom:8px}
+    .section-title{font-size:26px;font-weight:800;color:#111;margin-bottom:28px;line-height:1.2}
+    .benefits-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+    .benefit{background:#FDF2F8;border-radius:12px;padding:20px 16px;border:1px solid #BE185D22}
+    .b-icon{font-size:28px;font-weight:800;color:#BE185D;margin-bottom:8px;font-family:monospace}
+    .benefit p{font-size:15px;color:#333;font-weight:500;line-height:1.4}
+
+    /* ── Divider ── */
+    .divider{height:1px;background:#f0f0f0;margin:8px 0 40px}
+
+    /* ── What's inside ── */
+    .inside{padding-bottom:40px}
+    .fl{list-style:none;background:#fafafa;border-radius:16px;padding:8px 0;border:1px solid #f0f0f0}
+    .fi{display:flex;align-items:flex-start;gap:14px;padding:14px 20px;border-bottom:1px solid #f0f0f0;font-size:15px;color:#333}
+    .fi:last-child{border-bottom:none}
+    .ck{color:#22c55e;font-weight:700;font-size:18px;flex-shrink:0;margin-top:1px}
+
+    /* ── About product ── */
+    .about{background:#FDF2F8;border-radius:16px;padding:28px;margin-bottom:40px;border-left:4px solid #BE185D}
+    .about h3{font-size:18px;font-weight:700;color:#111;margin-bottom:12px}
+    .about p{font-size:15px;color:#444;line-height:1.7}
+
+    /* ── Trust ── */
+    .trust{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:40px}
+    .t-item{display:flex;align-items:center;gap:10px;background:#fafafa;border-radius:10px;padding:14px;border:1px solid #f0f0f0}
+    .t-icon{font-size:22px;flex-shrink:0}
+    .t-text{font-size:13px;color:#555;font-weight:500;line-height:1.3}
+
+    /* ── Buy section ── */
+    .buy-wrap{background:#FDF2F8;border-radius:20px;padding:32px 28px;border:2px solid #BE185D33;margin-bottom:40px}
+    .urgency-bar{background:#fff3cd;border:1px solid #ffc107;border-radius:8px;padding:10px 16px;text-align:center;font-size:14px;font-weight:600;color:#856404;margin-bottom:20px}
+    .buy-price{text-align:center;margin-bottom:20px}
+    .buy-price-main{font-size:48px;font-weight:800;color:#BE185D}
+    .buy-price-old{font-size:20px;color:#999;text-decoration:line-through;margin-left:8px}
+    .buy-btn{width:100%;background:#BE185D;color:#fff;border:none;border-radius:14px;padding:20px;font-size:19px;font-weight:800;cursor:pointer;font-family:'Poppins',sans-serif;transition:all 0.2s;letter-spacing:0.3px;box-shadow:0 8px 24px #BE185D44}
+    .buy-btn:hover{opacity:0.92;transform:translateY(-2px);box-shadow:0 12px 32px #BE185D55}
+    .secure-row{display:flex;align-items:center;justify-content:center;gap:16px;margin-top:16px;flex-wrap:wrap}
+    .secure-item{display:flex;align-items:center;gap:5px;font-size:12px;color:#888}
+
+    /* ── FAQ ── */
+    .faq{margin-bottom:48px}
+    .faq-item{border-bottom:1px solid #f0f0f0;padding:20px 0}
+    .faq-q{font-size:16px;font-weight:700;color:#111;margin-bottom:8px}
+    .faq-a{font-size:15px;color:#555;line-height:1.6}
+
+    footer{background:#f8f9fa;padding:28px 20px;text-align:center;font-size:13px;color:#aaa;border-top:1px solid #f0f0f0}
+
+    @media(max-width:480px){
+      .hero-top{padding:36px 18px 0}
+      .price-row{gap:10px}
+      .price-now{font-size:32px}
+      .benefits-grid{grid-template-columns:1fr}
+      .trust{grid-template-columns:1fr}
+      .buy-wrap{padding:24px 18px}
+      .buy-price-main{font-size:36px}
+    }
+    @media(min-width:900px){
+      .benefits-grid{grid-template-columns:repeat(4,1fr)}
+    }
+    @media(min-width:1400px){
+      .hero-top{max-width:900px}
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-top">
+    <div class="hero-badge">✍️ content creation</div>
+    <h1>The Content Creation Complete Guide</h1>
+    <p class="hero-sub">Create better content faster with AI. Work Smarter. Earn More. Scale Faster..</p>
+  </div>
+  <div class="price-area">
+    <div class="price-row">
+      <span class="price-now">₹99</span>
+      <span class="price-old">₹297</span>
+      <span class="save-badge">SAVE 67%</span>
+    </div>
+    <p class="price-note">⚡ Instant download · No subscription · Pay once, keep forever</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+  <!-- What you'll achieve -->
+  <div class="achieve">
+    <p class="section-label">Why this works</p>
+    <h2 class="section-title">What you'll achieve with this guide</h2>
+    <div class="benefits-grid">
+      <div class="benefit"><div class="b-icon">01</div><p>Create 30 days content in 1 hour</p></div>
+<div class="benefit"><div class="b-icon">02</div><p>Never run out of ideas</p></div>
+<div class="benefit"><div class="b-icon">03</div><p>AI writes posts for you</p></div>
+<div class="benefit"><div class="b-icon">04</div><p>Grow audience on autopilot</p></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- What's inside -->
+  <div class="inside">
+    <p class="section-label">What's inside</p>
+    <h2 class="section-title" style="margin-bottom:20px">Everything included in your download</h2>
+    <ul class="fl">
+      <li class="fi"><span class="ck">✓</span><span>Detailed video walkthroughs for each strategy</span></li>
+<li class="fi"><span class="ck">✓</span><span>Done-for-you templates and swipe files</span></li>
+<li class="fi"><span class="ck">✓</span><span>Common mistakes to avoid and how to fix them</span></li>
+<li class="fi"><span class="ck">✓</span><span>Monthly action plan with clear milestones</span></li>
+<li class="fi"><span class="ck">✓</span><span>Community access for accountability and support</span></li>
+    </ul>
+  </div>
+
+  <!-- About -->
+  <div class="about">
+    <h3>🎯 Perfect for content creation beginners and pros</h3>
+    <p>Work Smarter. Earn More. Scale Faster.. This guide is designed to be immediately actionable — no fluff, no theory, just step-by-step systems you can implement today and start seeing results.</p>
+  </div>
+
+  <!-- Trust signals -->
+  <div class="trust">
+    <div class="t-item"><span class="t-icon">⚡</span><div class="t-text"><strong>Instant Download</strong><br>Access immediately after payment</div></div>
+    <div class="t-item"><span class="t-icon">🔒</span><div class="t-text"><strong>100% Secure</strong><br>Powered by Razorpay</div></div>
+    <div class="t-item"><span class="t-icon">📱</span><div class="t-text"><strong>All Devices</strong><br>Phone, tablet, laptop</div></div>
+    <div class="t-item"><span class="t-icon">♾️</span><div class="t-text"><strong>Yours Forever</strong><br>No expiry, keep forever</div></div>
+  </div>
+
+  <!-- Buy -->
+  <div class="buy-wrap" id="buy-section">
+    <div class="urgency-bar">🔥 Launch price — ₹99 only (Regular ₹297) · Save 67% today</div>
+    <div class="buy-price">
+      <span class="buy-price-main">₹99</span>
+      <span class="buy-price-old">₹297</span>
+    </div>
+    <button class="buy-btn" onclick="openCheckout()">
+      ⚡ Get Instant Access Now — ₹99
+    </button>
+    <div class="secure-row">
+      <span class="secure-item">🔒 Razorpay Secured</span>
+      <span class="secure-item">💳 UPI · Cards · Netbanking</span>
+      <span class="secure-item">📦 Instant PDF Download</span>
+    </div>
+  </div>
+
+  
+    <div id="success" style="display:none;padding:40px 24px;text-align:center;background:#f0fdf4;border-radius:16px;border:2px solid #86efac;margin-top:20px;">
+      <div style="font-size:56px;margin-bottom:16px">🎉</div>
+      <h3 style="color:#16a34a;font-size:24px;font-weight:700;margin-bottom:8px">Payment Successful!</h3>
+      <p style="color:#555;margin-bottom:24px;font-size:16px;line-height:1.6">Thank you! Your PDF is downloading automatically.<br>Check your Downloads folder.</p>
+      <a href="https://digitalproductsforyou.github.io/digitalpickup/pins/the-content-creation-complete-guide.pdf" download style="display:inline-block;background:#BE185D;color:#fff;padding:16px 40px;border-radius:12px;font-weight:700;text-decoration:none;font-size:17px;font-family:'Poppins',sans-serif">⬇️ Download Again</a>
+      <p style="color:#aaa;font-size:13px;margin-top:16px">Keep this page bookmarked for future access.</p>
+    </div>
+
+  <!-- FAQ -->
+  <div class="faq">
+    <p class="section-label">Common questions</p>
+    <h2 class="section-title" style="margin-bottom:24px">Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <p class="faq-q">How do I receive my download?</p>
+      <p class="faq-a">Immediately after payment, the PDF will download automatically on this page. No email needed, no waiting.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">What format is the product in?</p>
+      <p class="faq-a">It's a PDF file that works on all devices — phone, tablet, laptop, or desktop. You can also print it.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Is my payment secure?</p>
+      <p class="faq-a">Yes. All payments are processed by Razorpay, India's most trusted payment gateway. We never store your card or UPI details.</p>
+    </div>
+    <div class="faq-item">
+      <p class="faq-q">Can I pay using UPI?</p>
+      <p class="faq-a">Yes — you can pay via UPI, credit/debit cards, netbanking, or EMI. All options are available at checkout.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  &copy; 2026 Digital Products Wala &nbsp;·&nbsp; Instant digital download
+</footer>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+function openCheckout(){
+  new Razorpay({
+    key:'rzp_live_J08kk6zMbXK8Mw',
+    amount:9900,
+    currency:'INR',
+    name:'The Content Creation Complete Guide',
+    description:'Work Smarter. Earn More. Scale Faster.',
+    theme:{color:'#BE185D'},
+    handler:function(r){
+        document.getElementById('buy-section').style.display='none';
+        document.getElementById('success').style.display='block';
+        document.getElementById('success').scrollIntoView({behavior:'smooth'});
+        setTimeout(function(){
+          var a=document.createElement('a');
+          a.href='https://digitalproductsforyou.github.io/digitalpickup/pins/the-content-creation-complete-guide.pdf';
+          a.download='https://digitalproductsforyou.github.io/digitalpickup/pins/the-content-creation-complete-guide.pdf'.split('/').pop();
+          document.body.appendChild(a);a.click();document.body.removeChild(a);
+        }, 500);},
+    prefill:{name:'',email:'',contact:''},
+    modal:{ondismiss:function(){}}
+  }).open();
+}
+</script>
+</body>
+</html>
